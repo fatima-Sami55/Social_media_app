@@ -25,7 +25,7 @@ A full-stack social media platform built with **React** frontend and **Firebase*
 
 ### 1\. Clone the repo
 
-    git clone https://github.com/fatima-Sami55/Social_media_app
+    git clone https://github.com/fatima-Sami55/SocialApe
 
 ### 2\. Install dependencies
 
