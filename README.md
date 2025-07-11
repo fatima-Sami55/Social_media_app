@@ -48,7 +48,7 @@ Create a `.env` file with your Firebase config:
 🌐 Deployment
 -------------
 
-**Frontend:** Deploy on [Vercel](https://vercel.com/).  
+**Frontend:** Deploy on [Vercel](https://socialape-coral.vercel.app/).  
 **Backend:** Deploy Firebase functions using:
 
     firebase deploy --only functions
