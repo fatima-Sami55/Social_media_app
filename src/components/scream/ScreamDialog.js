@@ -122,11 +122,11 @@ class ScreamDialog extends Component {
           <MyButton tip="comments">
             <ChatIcon color="primary" />
           </MyButton>
-          <span>{commentCount} comments</span>
+          <span>{this.props.scream.commentCount} comments</span>
         </Grid>
         <hr className={classes.visibleSeparator} />
         <CommentForm screamId={screamId} />
-        <Comments comments={comments} />
+        <Comments key={screamId} />
       </Grid>
     );
     return (

@@ -23,8 +23,8 @@ import axios from 'axios';
 
 const theme = createMuiTheme(themeObject);
 
-axios.defaults.baseURL =
-  '';  // your firebase url
+axios.defaults.baseURL = 'https://api-3ygbceyoja-el.a.run.app';  
+
 
 const token = localStorage.FBIdToken;
 if (token) {

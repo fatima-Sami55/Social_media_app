@@ -17,6 +17,8 @@ import Typography from '@material-ui/core/Typography';
 import ChatIcon from '@material-ui/icons/Chat';
 // Redux
 import { connect } from 'react-redux';
+import NoImg from '../../images/no-img.png';
+
 
 const styles = {
   card: {
@@ -60,10 +62,14 @@ class Scream extends Component {
     return (
       <Card className={classes.card}>
         <CardMedia
-          image={userImage}
-          title="Profile image"
-          className={classes.image}
-        />
+  image={
+    userHandle === handle
+      ? this.props.user.credentials.imageUrl || NoImg
+      : userImage || NoImg
+  }
+  title="Profile image"
+  className={classes.image}
+/>
         <CardContent className={classes.content}>
           <Typography
             variant="h5"
@@ -83,7 +89,7 @@ class Scream extends Component {
           <MyButton tip="comments">
             <ChatIcon color="primary" />
           </MyButton>
-          <span>{commentCount} comments</span>
+          <span>{this.props.scream.commentCount} comments</span>
           <ScreamDialog
             screamId={screamId}
             userHandle={userHandle}
