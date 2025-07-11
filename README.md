@@ -1,4 +1,4 @@
-🐵 SocialApp
+🐵 SocialApe
 ============
 
 A full-stack social media platform built with **React** frontend and **Firebase** backend (Firestore + Cloud Functions).
