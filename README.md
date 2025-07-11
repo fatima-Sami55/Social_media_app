@@ -1,29 +1,54 @@
-# Social Media App
+🐵 SocialApp
+============
 
-![socialape](https://user-images.githubusercontent.com/84532632/137352738-dd0aa306-e511-4e6a-9644-0a49bd66941e.png)
+A full-stack social media platform built with **React** frontend and **Firebase** backend (Firestore + Cloud Functions).
 
-This is a **fully featured social media app**, developed as my **fourth project**. The app allows users to interact through **posts**, **profiles**, and **follow functionalities**. Built with **Node.js**, **Express**, and **Firebase** for real-time data storage, this app also utilizes **React** and **Redux** for a dynamic frontend.
+📦 Tech Stack
+-------------
 
-### 🚀 Features:
-- User authentication and authorization.
-- Post creation, editing, and deletion.
-- Follow/unfollow functionality.
-- Profile management.
+*   **Frontend:** React.js, Redux, Material-UI, Axios
+*   **Backend:** Firebase (Firestore, Cloud Functions, Auth)
+*   **Deployment:** Vercel (Frontend), Firebase Hosting (Functions)
 
-### 🛠 Technologies Used:
-- **Backend**: Node.js, Express, Firebase
-- **Frontend**: React, Redux, Material-UI, Axios
-- **Other Libraries**: JWT-decode, React Router, Day.js
+🚀 Features
+-----------
 
-### 🚀 How to Run:
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/fatima-Sami55/Social_media_app.git
+*   User signup / login / logout
+*   Create and delete screams (posts)
+*   Comment on screams
+*   Like / Unlike screams
+*   Upload profile image
+*   Live UI updates without refreshing
 
-2. Install dependencies:
-   ```bash
-   npm install
+🔧 Setup Instructions
+---------------------
 
-3. Run the app:
-   ```bash
-   npm start
+### 1\. Clone the repo
+
+    git clone https://github.com/fatima-Sami55/Social_media_app
+
+### 2\. Install dependencies
+
+    npm install
+
+### 3\. Configure environment
+
+Create a `.env` file with your Firebase config:
+
+    REACT_APP_API_URL=https://your-backend-url.cloudfunctions.net/api
+
+### 4\. Start the dev server
+
+    npm start
+
+### 5\. Build for production
+
+    npm run build
+
+🌐 Deployment
+-------------
+
+**Frontend:** Deploy on [Vercel](https://vercel.com/).  
+**Backend:** Deploy Firebase functions using:
+
+    firebase deploy --only functions
